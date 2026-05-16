@@ -537,3 +537,171 @@ nav a:hover{
     }
 
 }
+
+
+/* CAMPAIGN */
+
+.campaign{
+    padding:160px 7%;
+
+    background:#050505;
+
+    display:grid;
+
+    grid-template-columns:
+    1fr 1fr;
+
+    gap:40px;
+}
+
+/* LEFT */
+
+.campaign-left{
+    height:950px;
+
+    overflow:hidden;
+}
+
+.campaign-left img{
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    transition:1s ease;
+}
+
+/* RIGHT */
+
+.campaign-right{
+    display:flex;
+    flex-direction:column;
+
+    gap:40px;
+}
+
+/* TEXT */
+
+.campaign-text{
+    padding:40px 20px;
+}
+
+.campaign-text p{
+    color:#D6C2A4;
+
+    letter-spacing:6px;
+
+    margin-bottom:25px;
+
+    font-size:0.8rem;
+}
+
+.campaign-text h2{
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:5rem;
+    font-weight:300;
+
+    line-height:1;
+
+    margin-bottom:30px;
+}
+
+.campaign-text span{
+    color:#D8D8D8;
+
+    line-height:2;
+
+    display:block;
+
+    margin-bottom:45px;
+
+    max-width:500px;
+}
+
+/* BUTTON */
+
+.campaign-text a{
+    display:inline-block;
+
+    padding:18px 40px;
+
+    border:
+    1px solid rgba(255,255,255,0.12);
+
+    color:#F5F1E8;
+
+    text-decoration:none;
+
+    letter-spacing:3px;
+
+    font-size:0.8rem;
+
+    transition:0.5s ease;
+}
+
+.campaign-text a:hover{
+    background:#F5F1E8;
+
+    color:#050505;
+}
+
+/* IMAGE */
+
+.campaign-right img{
+    width:100%;
+    height:520px;
+
+    object-fit:cover;
+
+    transition:1s ease;
+}
+
+/* HOVER */
+
+.campaign-left:hover img,
+.campaign-right:hover img{
+    transform:scale(1.05);
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+    .campaign{
+        grid-template-columns:1fr;
+    }
+
+    .campaign-left{
+        height:650px;
+    }
+
+    .campaign-text h2{
+        font-size:4rem;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .campaign{
+        padding:120px 7%;
+    }
+
+    .campaign-left{
+        height:520px;
+    }
+
+    .campaign-text{
+        padding:0;
+    }
+
+    .campaign-text h2{
+        font-size:3rem;
+    }
+
+    .campaign-right img{
+        height:420px;
+    }
+
+}
