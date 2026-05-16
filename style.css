@@ -432,3 +432,108 @@ nav a:hover{
     }
 
              }
+
+
+/* PHILOSOPHY */
+
+.philosophy{
+    position:relative;
+
+    height:85vh;
+
+    background:
+    url('images/philosophy.jpg');
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    overflow:hidden;
+}
+
+/* OVERLAY */
+
+.philosophy-overlay{
+    position:absolute;
+
+    inset:0;
+
+    background:
+    linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.55),
+        rgba(0,0,0,0.82)
+    );
+}
+
+/* CONTENT */
+
+.philosophy-content{
+    position:relative;
+
+    z-index:5;
+
+    padding:0 7%;
+
+    max-width:900px;
+}
+
+.philosophy-content p{
+    color:#D6C2A4;
+
+    letter-spacing:6px;
+
+    margin-bottom:28px;
+
+    font-size:0.8rem;
+}
+
+.philosophy-content h2{
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:6rem;
+    font-weight:300;
+
+    line-height:1;
+
+    margin-bottom:35px;
+}
+
+.philosophy-content span{
+    color:#D8D8D8;
+
+    line-height:2;
+
+    max-width:650px;
+
+    display:block;
+
+    margin:auto;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+    .philosophy-content h2{
+        font-size:4rem;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .philosophy{
+        height:70vh;
+    }
+
+    .philosophy-content h2{
+        font-size:3rem;
+    }
+
+}
