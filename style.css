@@ -270,3 +270,165 @@ nav a:hover{
     }
 
   }
+
+
+/* COLLECTIONS */
+
+.collections{
+    padding:160px 7%;
+
+    background:#080808;
+}
+
+/* TITLE */
+
+.collections-title{
+    margin-bottom:90px;
+}
+
+.collections-title p{
+    color:#D6C2A4;
+
+    letter-spacing:6px;
+
+    margin-bottom:22px;
+
+    font-size:0.8rem;
+}
+
+.collections-title h2{
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:5.5rem;
+    font-weight:300;
+
+    line-height:1;
+}
+
+/* GRID */
+
+.collections-grid{
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:35px;
+}
+
+/* CARD */
+
+.collection-card{
+    position:relative;
+
+    overflow:hidden;
+
+    height:720px;
+
+    cursor:pointer;
+}
+
+/* IMAGE */
+
+.collection-card img{
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    transition:1s ease;
+}
+
+/* OVERLAY */
+
+.collection-card::after{
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    linear-gradient(
+        to top,
+        rgba(0,0,0,0.88),
+        rgba(0,0,0,0.15)
+    );
+}
+
+/* INFO */
+
+.collection-info{
+    position:absolute;
+
+    left:40px;
+    bottom:40px;
+
+    z-index:5;
+}
+
+.collection-info h3{
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:2.4rem;
+    font-weight:300;
+
+    margin-bottom:10px;
+}
+
+.collection-info span{
+    color:#D8D8D8;
+
+    letter-spacing:2px;
+
+    font-size:0.82rem;
+}
+
+/* HOVER */
+
+.collection-card:hover img{
+    transform:scale(1.08);
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+    .collections-grid{
+        grid-template-columns:1fr;
+    }
+
+    .collections-title h2{
+        font-size:4rem;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .collections{
+        padding:120px 7%;
+    }
+
+    .collections-title{
+        margin-bottom:60px;
+    }
+
+    .collections-title h2{
+        font-size:3rem;
+    }
+
+    .collection-card{
+        height:520px;
+    }
+
+    .collection-info{
+        left:28px;
+        bottom:28px;
+    }
+
+    .collection-info h3{
+        font-size:2rem;
+    }
+
+             }
