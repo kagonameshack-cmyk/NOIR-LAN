@@ -1209,6 +1209,16 @@ nav a:hover{
     align-items:center;
 }
 
+.footer-line{
+    width:120px;
+    height:1px;
+
+    background:
+    rgba(214,194,164,0.35);
+
+    margin-bottom:12px;
+}
+
 /* TEXT */
 
 .footer-bottom span,
