@@ -1,0 +1,249 @@
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+
+    box-sizing:border-box;
+}
+
+/* BODY */
+
+body{
+    background:#050505;
+
+    color:#F5F1E8;
+
+    font-family:'Inter',sans-serif;
+}
+
+/* HERO */
+
+.about-hero{
+    position:relative;
+
+    height:85vh;
+
+    background:
+    url('images/about-hero.jpg');
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    align-items:center;
+
+    overflow:hidden;
+}
+
+/* OVERLAY */
+
+.overlay{
+    position:absolute;
+
+    inset:0;
+
+    background:
+    linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.45),
+        rgba(0,0,0,0.88)
+    );
+}
+
+/* CONTENT */
+
+.hero-content{
+    position:relative;
+
+    z-index:5;
+
+    padding:0 7%;
+}
+
+/* TEXT */
+
+.hero-content p{
+    color:#D6C2A4;
+
+    letter-spacing:6px;
+
+    margin-bottom:22px;
+
+    font-size:0.8rem;
+}
+
+.hero-content h1{
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:6rem;
+    font-weight:300;
+
+    line-height:0.95;
+}
+
+/* PHILOSOPHY */
+
+.philosophy{
+    padding:160px 7%;
+
+    display:grid;
+
+    grid-template-columns:
+    1fr 1fr;
+
+    gap:80px;
+
+    background:#080808;
+}
+
+/* LEFT */
+
+.philosophy-left p{
+    color:#D6C2A4;
+
+    letter-spacing:6px;
+
+    margin-bottom:22px;
+
+    font-size:0.8rem;
+}
+
+.philosophy-left h2{
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:5rem;
+    font-weight:300;
+
+    line-height:1;
+}
+
+/* RIGHT */
+
+.philosophy-right{
+    display:flex;
+    align-items:center;
+}
+
+.philosophy-right span{
+    color:#D8D8D8;
+
+    line-height:2;
+
+    max-width:520px;
+}
+
+/* IMAGE */
+
+.about-image{
+    background:#080808;
+}
+
+.about-image img{
+    width:100%;
+    height:900px;
+
+    object-fit:cover;
+}
+
+/* VALUES */
+
+.values{
+    padding:160px 7%;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:40px;
+
+    background:#050505;
+}
+
+/* VALUE */
+
+.value{
+    padding:50px;
+
+    border:
+    1px solid rgba(255,255,255,0.08);
+}
+
+/* NUMBER */
+
+.value h2{
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:4rem;
+    font-weight:300;
+
+    color:#D6C2A4;
+
+    margin-bottom:25px;
+}
+
+/* TITLE */
+
+.value h3{
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:2rem;
+    font-weight:300;
+
+    margin-bottom:22px;
+}
+
+/* TEXT */
+
+.value span{
+    color:#D8D8D8;
+
+    line-height:2;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+    .hero-content h1{
+        font-size:4.5rem;
+    }
+
+    .philosophy{
+        grid-template-columns:1fr;
+    }
+
+    .philosophy-left h2{
+        font-size:4rem;
+    }
+
+    .values{
+        grid-template-columns:1fr;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .hero-content h1{
+        font-size:3.2rem;
+    }
+
+    .philosophy{
+        padding:120px 7%;
+    }
+
+    .philosophy-left h2{
+        font-size:3rem;
+    }
+
+    .about-image img{
+        height:520px;
+    }
+
+    .values{
+        padding:120px 7%;
+    }
+
+}
