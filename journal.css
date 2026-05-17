@@ -1,0 +1,197 @@
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+
+    box-sizing:border-box;
+}
+
+/* BODY */
+
+body{
+    background:#050505;
+
+    color:#F5F1E8;
+
+    font-family:'Inter',sans-serif;
+}
+
+/* HERO */
+
+.journal-hero{
+    position:relative;
+
+    height:75vh;
+
+    background:
+    url('images/journal-hero.jpg');
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    align-items:center;
+
+    overflow:hidden;
+}
+
+/* OVERLAY */
+
+.overlay{
+    position:absolute;
+
+    inset:0;
+
+    background:
+    linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.45),
+        rgba(0,0,0,0.88)
+    );
+}
+
+/* CONTENT */
+
+.journal-content{
+    position:relative;
+
+    z-index:5;
+
+    padding:0 7%;
+}
+
+/* TEXT */
+
+.journal-content p{
+    color:#D6C2A4;
+
+    letter-spacing:6px;
+
+    margin-bottom:22px;
+
+    font-size:0.8rem;
+}
+
+.journal-content h1{
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:6rem;
+    font-weight:300;
+
+    line-height:0.95;
+}
+
+/* ARTICLES */
+
+.articles{
+    padding:160px 7%;
+
+    display:flex;
+    flex-direction:column;
+
+    gap:120px;
+
+    background:#080808;
+}
+
+/* CARD */
+
+.article-card{
+    display:grid;
+
+    grid-template-columns:
+    1.1fr 1fr;
+
+    gap:60px;
+
+    align-items:center;
+}
+
+/* IMAGE */
+
+.article-card img{
+    width:100%;
+    height:720px;
+
+    object-fit:cover;
+
+    transition:1s ease;
+}
+
+.article-card:hover img{
+    transform:scale(1.03);
+}
+
+/* INFO */
+
+.article-info p{
+    color:#D6C2A4;
+
+    letter-spacing:6px;
+
+    margin-bottom:22px;
+
+    font-size:0.8rem;
+}
+
+.article-info h2{
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:4.5rem;
+    font-weight:300;
+
+    line-height:1;
+
+    margin-bottom:30px;
+}
+
+.article-info span{
+    color:#D8D8D8;
+
+    line-height:2;
+
+    max-width:480px;
+
+    display:block;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+    .journal-content h1{
+        font-size:4.5rem;
+    }
+
+    .article-card{
+        grid-template-columns:1fr;
+    }
+
+    .article-info h2{
+        font-size:3.5rem;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .journal-content h1{
+        font-size:3.2rem;
+    }
+
+    .articles{
+        padding:120px 7%;
+
+        gap:80px;
+    }
+
+    .article-card img{
+        height:500px;
+    }
+
+    .article-info h2{
+        font-size:2.8rem;
+    }
+
+}
