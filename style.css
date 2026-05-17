@@ -1194,3 +1194,30 @@ nav a:hover{
     }
 
 }
+
+
+/* FOOTER BOTTOM */
+
+.footer-bottom{
+    margin-top:60px;
+
+    display:flex;
+    flex-direction:column;
+
+    gap:10px;
+
+    align-items:center;
+}
+
+/* TEXT */
+
+.footer-bottom span,
+.footer-bottom p{
+    color:rgba(255,255,255,0.45);
+
+    font-size:0.72rem;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+}
