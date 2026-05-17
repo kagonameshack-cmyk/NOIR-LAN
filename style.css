@@ -353,10 +353,16 @@ nav a:hover{
 
 /* MOBILE */
 
-@media(max-width:600px){
+/* MOBILE */
+
+@media(max-width:900px){
 
     nav{
         display:none;
+    }
+
+    .menu-toggle{
+        display:flex;
     }
 
     header{
@@ -373,7 +379,7 @@ nav a:hover{
         font-size:0.95rem;
     }
 
-  }
+}
 
 
 /* COLLECTIONS */
