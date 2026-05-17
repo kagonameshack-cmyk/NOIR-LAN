@@ -1,0 +1,211 @@
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+
+    box-sizing:border-box;
+}
+
+/* BODY */
+
+body{
+    background:#050505;
+
+    color:#F5F1E8;
+
+    font-family:'Inter',sans-serif;
+}
+
+/* HERO */
+
+.hero{
+    position:relative;
+
+    height:75vh;
+
+    background:
+    url('images/collections-hero.jpg');
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    align-items:center;
+
+    overflow:hidden;
+}
+
+/* OVERLAY */
+
+.overlay{
+    position:absolute;
+
+    inset:0;
+
+    background:
+    linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.45),
+        rgba(0,0,0,0.88)
+    );
+}
+
+/* CONTENT */
+
+.hero-content{
+    position:relative;
+
+    z-index:5;
+
+    padding:0 7%;
+}
+
+/* TEXT */
+
+.hero-content p{
+    color:#D6C2A4;
+
+    letter-spacing:6px;
+
+    margin-bottom:22px;
+
+    font-size:0.8rem;
+}
+
+.hero-content h1{
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:6rem;
+    font-weight:300;
+
+    line-height:0.95;
+}
+
+/* GRID */
+
+.collections-grid{
+    padding:160px 7%;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(2,1fr);
+
+    gap:35px;
+
+    background:#080808;
+}
+
+/* ITEM */
+
+.collection-item{
+    position:relative;
+
+    overflow:hidden;
+
+    height:850px;
+
+    cursor:pointer;
+}
+
+/* IMAGE */
+
+.collection-item img{
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    transition:1s ease;
+}
+
+/* OVERLAY */
+
+.collection-item::after{
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    linear-gradient(
+        to top,
+        rgba(0,0,0,0.88),
+        rgba(0,0,0,0.15)
+    );
+}
+
+/* INFO */
+
+.collection-info{
+    position:absolute;
+
+    left:40px;
+    bottom:40px;
+
+    z-index:5;
+}
+
+.collection-info h2{
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:3rem;
+    font-weight:300;
+
+    margin-bottom:10px;
+}
+
+.collection-info span{
+    color:#D8D8D8;
+
+    letter-spacing:2px;
+
+    font-size:0.82rem;
+}
+
+/* HOVER */
+
+.collection-item:hover img{
+    transform:scale(1.06);
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+    .hero-content h1{
+        font-size:4.5rem;
+    }
+
+    .collections-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .hero-content h1{
+        font-size:3.2rem;
+    }
+
+    .collections-grid{
+        padding:120px 7%;
+    }
+
+    .collection-item{
+        height:520px;
+    }
+
+    .collection-info{
+        left:28px;
+        bottom:28px;
+    }
+
+    .collection-info h2{
+        font-size:2rem;
+    }
+
+}
